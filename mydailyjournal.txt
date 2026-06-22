@@ -1,0 +1,8 @@
+2026-06-11  
+ I learned about python today 
+ Productivity: 5
+**********************************************************************
+2026-06-11  
+ I am learning python through making small projects. it is a great learning experience. 
+ Productivity: 4.5
+**********************************************************************
