@@ -9,7 +9,7 @@ class User:
         return self.__salary
          
     @salary.setter
-    def salary(self, newsalary):
+    def salary(self, newsalary:float):
         self.__salary = newsalary
     
 

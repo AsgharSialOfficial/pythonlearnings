@@ -12,11 +12,13 @@ class Library:
         if Book.isAvailable:
             return 'Yes , It is available'
         else:
-            'No, Book is not available'
+            return 'No, Book is not available'
     def addbook(self,book):
-        if book not in self.book:
-            self.book.append(book)
-            return 'Book has been added to the library'
+        for eachbook in self.book:
+            if eachbook.id!=book.id:
+                self.book.append(book)
+                break
+                return 'Book has been added to the library'
         else:
             return 'This Books already Exist'
     def searchbook(self, name):
@@ -59,7 +61,7 @@ class Library:
         else:
             for eachbook in self.book:
                 if eachbook.id == bookid:
-                    eachbook.isAvailable ==True
+                    eachbook.isAvailable =True
                     member.borrowedbooks.remove(eachbook)
                     print('Ok, your book return is sucessfully ssubmitted!')
                     break
